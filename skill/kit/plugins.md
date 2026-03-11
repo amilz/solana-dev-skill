@@ -1,3 +1,8 @@
+---
+title: Plugins Reference
+description: Plugin architecture with @solana/plugin-core and @solana/kit-plugins for composable client building, preset clients, and LiteSVM testing.
+---
+
 # Solana Kit Plugins Reference
 
 ## Plugin Architecture

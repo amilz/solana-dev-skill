@@ -1,3 +1,8 @@
+---
+title: Codama Program Clients
+description: Naming conventions and patterns for Codama-generated @solana-program/* Kit-compatible clients.
+---
+
 # Codama-Generated Program Clients
 
 `@solana-program/*` packages are Codama-generated, Kit-compatible clients for Solana programs.

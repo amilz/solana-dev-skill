@@ -1,3 +1,8 @@
+---
+title: Token-2022 (Token Extensions)
+description: Kit-compatible @solana-program/token-2022 client for transfer fees, on-chain metadata, confidential transfers, transfer hooks, and other extensions.
+---
+
 # Token-2022 (Token Extensions)
 
 Program address: `TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb`

@@ -1,3 +1,8 @@
+---
+title: Common Gotchas
+description: Common type errors and runtime pitfalls with @solana/kit and their fixes, including signer types, lifetime assertions, and blockhash expiry.
+---
+
 # Solana Kit Gotchas
 
 Common type errors and runtime pitfalls with their fixes.
@@ -203,5 +208,5 @@ if (!account.exists) {
 | Missing lifetime type on send | `assertIsTransactionWithBlockhashLifetime(signed)` |
 | Missing size type on send | `assertIsTransactionWithinSizeLimit(signed)` |
 | Durable nonce send type error | `assertIsTransactionWithDurableNonceLifetime(signed)` |
-| `lifetimeConstraint` lost after deserialize | Re-attach metadata manually (see durable-nonce.md) |
+| `lifetimeConstraint` lost after deserialize | Re-attach `lifetimeConstraint` metadata manually after deserialization |
 | RPC URL wrapper issues | Use raw URL strings instead of `devnet()`/`mainnet()` |

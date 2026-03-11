@@ -1,3 +1,8 @@
+---
+title: Codecs Reference
+description: Data encoding and decoding patterns for numbers, strings, structs, arrays, enums, discriminated unions, and common account/instruction codecs.
+---
+
 # Solana Kit Codecs Reference
 
 ## Direction

@@ -1,3 +1,8 @@
+---
+title: Transactions Reference
+description: Transaction building with pipe composition, fee payer, lifetime, instructions, compute budget, signing, sending, and error handling.
+---
+
 # Solana Kit Transactions Reference
 
 ## Transaction Flow
@@ -47,7 +52,7 @@ const msg = setTransactionMessageLifetimeUsingBlockhash(latestBlockhash, message
 
 ### Durable Nonce
 
-See `reference/durable-nonce.md` for complete lifecycle (create account, fetch nonce, build tx, multi-party signing).
+For durable nonces, use `setTransactionMessageLifetimeUsingDurableNonce()` — it automatically adds the AdvanceNonceAccount instruction.
 
 ## Instructions
 
@@ -118,7 +123,7 @@ const estimateAndUpdateCU = estimateAndUpdateProvisoryComputeUnitLimitFactory(
 let updatedMessage = await estimateAndUpdateCU(message);
 ```
 
-See `reference/programs/compute-budget.md` for full CU estimation patterns.
+See [programs/compute-budget.md](programs/compute-budget.md) for full CU estimation patterns.
 
 ### Update Priority Fee Dynamically
 

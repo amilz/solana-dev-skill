@@ -1,3 +1,8 @@
+---
+title: "@solana/kit Quick Start"
+description: Quick-start guide for the @solana/kit JavaScript SDK covering installation, core concepts, common patterns, Codama program clients, and package overview.
+---
+
 # @solana/kit Reference
 
 `@solana/kit` is the JavaScript SDK for building Solana applications. Modular, tree-shakable, full TypeScript support.
@@ -94,6 +99,8 @@ assertIsTransactionWithBlockhashLifetime(signed);
 await sendAndConfirm(signed, { commitment: 'confirmed' });
 ```
 
+See [transaction.md](transaction.md) for compute budget, CU estimation, and full send patterns.
+
 ### Compute Budget (Required for production)
 
 ```ts
@@ -120,6 +127,8 @@ const account = await fetchEncodedAccount(rpc, myAddress);
 assertAccountExists(account);
 const decoded = decodeAccount(account, myDecoder);
 ```
+
+See [accounts.md](accounts.md) for batch fetching, PDAs, subscriptions, and token queries.
 
 ### Codec Example
 
@@ -173,8 +182,6 @@ See [codama.md](codama.md) for naming conventions and patterns.
 | `@solana/functional` | Pipe and compose utilities |
 | `@solana/react` | React wallet hooks |
 
-For full package list, see individual `@solana/*` packages.
-
 ## Best Practices
 
 1. **Use `pipe()`** for transaction building
@@ -186,12 +193,11 @@ For full package list, see individual `@solana/*` packages.
 ## Reference Files
 
 For detailed patterns:
-- [accounts.md](accounts.md) — Fetching, parsing, decoding accounts
+- [accounts.md](accounts.md) — Fetching, decoding, batch, PDAs, subscriptions
 - [codecs.md](codecs.md) — Complete codec patterns
 - [rpc.md](rpc.md) — RPC methods and subscriptions
 - [react.md](react.md) — React hooks and wallet integration
 - [transaction.md](transaction.md) — Transaction building, signing, compute budget
-- [durable-nonce.md](durable-nonce.md) — Durable nonce lifecycle & multi-party signing
 - [plugins.md](plugins.md) — Plugin architecture & kit-plugins
 - [gotchas.md](gotchas.md) — Common type errors & fixes
 - [codama.md](codama.md) — Codama patterns, naming conventions, program clients

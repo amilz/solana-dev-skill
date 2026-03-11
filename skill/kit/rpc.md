@@ -1,20 +1,27 @@
 # Solana Kit RPC Reference
 
+---
+title: RPC Reference
+description: Creating RPC clients, making calls, return types, common methods, subscriptions, airdrop, and error handling with @solana/kit.
+---
+
 ## Creating Clients
 
 ```ts
-import { createSolanaRpc, createSolanaRpcSubscriptions, devnet, mainnet } from '@solana/kit';
+import { createSolanaRpc, createSolanaRpcSubscriptions } from '@solana/kit';
 
 // Devnet
-const rpc = createSolanaRpc(devnet('https://api.devnet.solana.com'));
-const rpcSubs = createSolanaRpcSubscriptions(devnet('wss://api.devnet.solana.com'));
+const rpc = createSolanaRpc('https://api.devnet.solana.com');
+const rpcSubs = createSolanaRpcSubscriptions('wss://api.devnet.solana.com');
 
 // Mainnet
-const rpc = createSolanaRpc(mainnet('https://api.mainnet-beta.solana.com'));
+const rpc = createSolanaRpc('https://api.mainnet-beta.solana.com');
 
-// Local (use raw URL string for localnet)
+// Local
 const rpc = createSolanaRpc('http://127.0.0.1:8899');
 ```
+
+**Optional cluster wrappers:** `devnet()`, `mainnet()` from `@solana/kit` add cluster type-branding for type-safe cluster-specific APIs. Use raw URL strings unless you need cluster type narrowing.
 
 Also consider using [@solana/kit-plugins](plugins.md) for a simpler setup.  
 
@@ -22,7 +29,7 @@ Also consider using [@solana/kit-plugins](plugins.md) for a simpler setup.
 
 ```ts
 const transport = createDefaultRpcTransport({
-  url: mainnet('https://my-rpc.example.com'),
+  url: 'https://my-rpc.example.com',
   headers: { 'Authorization': 'Bearer token' },
 });
 const rpc = createSolanaRpcFromTransport(transport);

@@ -1,3 +1,8 @@
+---
+title: System Program
+description: Kit-compatible @solana-program/system client for account creation, SOL transfers, and nonce operations.
+---
+
 # System Program
 
 Program address: `11111111111111111111111111111111`

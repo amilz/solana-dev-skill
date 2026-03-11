@@ -1,3 +1,8 @@
+---
+title: Compute Budget Program
+description: Kit-compatible @solana-program/compute-budget client for CU limits, priority fees, heap frames, CU estimation, and retry strategies.
+---
+
 # Compute Budget Program
 
 Program address: `ComputeBudget111111111111111111111111111111`

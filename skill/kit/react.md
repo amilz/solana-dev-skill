@@ -1,4 +1,11 @@
+---
+title: React Hooks Reference
+description: Low-level wallet hooks from @solana/react for wallet selection, signing, and transaction sending in React apps.
+---
+
 # Solana Kit React Reference
+
+`@solana/react` provides low-level wallet hooks for Solana Kit. For full-featured React/Next.js apps with client setup, wallet discovery, balance hooks, and transaction helpers, see [frontend-framework-kit.md](../references/frontend-framework-kit.md) which covers `@solana/client` + `@solana/react-hooks`.
 
 ## Setup
 

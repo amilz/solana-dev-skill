@@ -1,3 +1,8 @@
+---
+title: SPL Token Program
+description: Kit-compatible @solana-program/token client for mint creation, transfers, ATAs, delegation, burning, and instruction plans.
+---
+
 # SPL Token Program
 
 Program address: `TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA`
